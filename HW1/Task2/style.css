@@ -1,0 +1,31 @@
+.container {
+    position: relative;
+    border: 5px solid rgb(0, 0, 0);
+    height: 550px;
+    width: 550px;
+}
+
+.item {
+    width: 60%;
+    height: 60%;
+}
+
+.red-item {
+    background: rgb(255, 0, 0);
+}
+
+.blue-item {
+    background: rgb(0, 0, 255);
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+}
+
+.green-item {
+    background: rgb(0, 255, 0);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}

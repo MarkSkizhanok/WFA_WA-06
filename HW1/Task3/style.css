@@ -1,0 +1,33 @@
+header,
+footer {
+  background: yellowgreen;
+  height: 15vh;
+  margin-left: 5vh;
+  margin-right: 5vh;
+}
+
+header {
+  border-radius: 0 0 20px 20px;
+}
+
+footer {
+  border-radius: 20px 20px 0 0;
+  padding-left: 20px;
+}
+
+#main {
+  min-height: calc(100vh - 30vh);
+}
+
+#main>article {
+  padding-left: 10vh;
+}
+
+#main>nav {
+  position: fixed;
+  width: 10vh;
+  /* height: 600px; */
+  background-color: rgba(192, 192, 192, 0.5);
+  top: 20vh;
+  bottom: 20vh;
+}
