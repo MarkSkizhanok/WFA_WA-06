@@ -6,14 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-        crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
     <script src="./index.js" defer></script>
     <script src="./computer.js"></script>
 </head>
@@ -33,21 +36,36 @@
                 <div class="card-body">
                     <form id='createForm'>
                         <div class="form-group">
+                            <label for="cselect">Class</label>
+                            <select id="cselect" class="form-control">
+                                <option value="csultrabook">Ultrabook</option>
+                                <option value="csserver">Server</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
                             <label for="cmanufacturer">Manufacturer</label>
                             <input type="text" class="form-control" id="cmanufacturer" aria-describedby="emailHelp"
                                 placeholder="Enter manufacturer name">
                         </div>
                         <div class="form-group">
                             <label for="ccoreNumber">Cores number</label>
-                            <input type="number" min=1 class="form-control" id="ccoreNumber" placeholder="Enter number of cores">
+                            <input type="number" min=1 class="form-control" id="ccoreNumber"
+                                placeholder="Enter number of cores">
                         </div>
                         <div class="form-group">
                             <label for="cramSize">RAM size</label>
-                            <input type="number" min=1 class="form-control" id="cramSize" placeholder="Enter size of RAM memory">
+                            <input type="number" min=1 class="form-control" id="cramSize"
+                                placeholder="Enter size of RAM memory">
                         </div>
                         <div class="form-group">
                             <label for="chddSize">HDD size</label>
-                            <input type="number" step=".1" min=1 class="form-control" id="chddSize" placeholder="Enter size of HDD memory">
+                            <input type="number" step=".1" min=1 class="form-control" id="chddSize"
+                                placeholder="Enter size of HDD memory">
+                        </div>
+                        <div class="form-group">
+                            <label for="cvariable" id="lblcvariable">Hyper-Threading technology</label>
+                            <input type="number" step=".1" min=1 class="form-control" id="cvariable"
+                                placeholder="Enter data">
                         </div>
 
                         <button type="submit" id='cbutton' class="btn btn-primary">Submit</button>
@@ -58,8 +76,8 @@
         <div class="card">
             <div class="card-header" id="headingTwo">
                 <h5 class="mb-0">
-                    <button id='rbutton' class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo"
-                        aria-expanded="false" aria-controls="collapseTwo">
+                    <button id='rbutton' class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                        data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                         Read
                     </button>
                 </h5>
@@ -74,6 +92,7 @@
                                 <th scope="col">Cores number</th>
                                 <th scope="col">RAM size</th>
                                 <th scope="col">HDD size</th>
+                                <th scope="col" id="tblvar">Hyper-Threading technology</th>
                             </tr>
                         </thead>
                         <tbody id='rTBody'>
@@ -93,8 +112,8 @@
         <div class="card">
             <div class="card-header" id="headingThree">
                 <h5 class="mb-0">
-                    <button id='pubutton' class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree"
-                        aria-expanded="false" aria-controls="collapseThree">
+                    <button id='pubutton' class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                        data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                         Update
                     </button>
                 </h5>
@@ -109,19 +128,28 @@
                         </div>
                         <div class="form-group">
                             <label for="umanufacturer">Manufacturer</label>
-                            <input type="text" class="form-control" id="umanufacturer" placeholder="Enter manufacturer name">
+                            <input type="text" class="form-control" id="umanufacturer"
+                                placeholder="Enter manufacturer name">
                         </div>
                         <div class="form-group">
                             <label for="ucoreNumber">Cores number</label>
-                            <input type="number" min=1 class="form-control" id="ucoreNumber" placeholder="Enter number of cores">
+                            <input type="number" min=1 class="form-control" id="ucoreNumber"
+                                placeholder="Enter number of cores">
                         </div>
                         <div class="form-group">
                             <label for="uramSize">RAM size</label>
-                            <input type="number" min=1 class="form-control" id="uramSize" placeholder="Enter size of RAM memory">
+                            <input type="number" min=1 class="form-control" id="uramSize"
+                                placeholder="Enter size of RAM memory">
                         </div>
                         <div class="form-group">
                             <label for="uhddSize">HDD size</label>
-                            <input type="number" step=".1" min=1 class="form-control" id="uhddSize" placeholder="Enter size of HDD memory">
+                            <input type="number" step=".1" min=1 class="form-control" id="uhddSize"
+                                placeholder="Enter size of HDD memory">
+                        </div>
+                        <div class="form-group">
+                            <label for="uvariable" id="lbluvariable">Hyper-Threading technology</label>
+                            <input type="number" step=".1" min=1 class="form-control" id="uvariable"
+                                placeholder="Enter data">
                         </div>
 
                         <button type="submit" id='ubutton' class="btn btn-primary">Submit</button>
@@ -132,8 +160,8 @@
         <div class="card">
             <div class="card-header" id="headingFour">
                 <h5 class="mb-0">
-                    <button button id='pdbutton' class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour"
-                        aria-expanded="false" aria-controls="collapseFour">
+                    <button button id='pdbutton' class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                        data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
                         Delete
                     </button>
                 </h5>
