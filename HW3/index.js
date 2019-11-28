@@ -7,9 +7,11 @@ function onSelect(ev) {
     switch (selVar) {
         case "Server":
             document.getElementById("lblcvariable").innerHTML = "Discrete Graphics Card";
+            document.getElementById("cvariable").placeholder = "Enter Discrete Graphics Card"
             break;
         case "Ultrabook":
             document.getElementById("lblcvariable").innerHTML = "Hyper-Threading technology";
+            document.getElementById("cvariable").placeholder = "Enter Hyper-Threading technology"
             break;
     }
 }
@@ -110,9 +112,11 @@ function onPrepareUpdate(ev) {
     switch (selVar) {
         case "Server":
             document.getElementById("lbluvariable").innerHTML = "Discrete Graphics Card";
+            document.getElementById("uvariable").placeholder = "Enter Discrete Graphics Card"
             break;
         case "Ultrabook":
             document.getElementById("lbluvariable").innerHTML = "Hyper-Threading technology";
+            document.getElementById("uvariable").placeholder = "Enter Hyper-Threading technology"
             break;
     }
 
