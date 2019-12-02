@@ -70,3 +70,6 @@ function Computer(manufacturer, numberOfProcessorCores, ramSize, hddSize) {
     this.discreteGraphicsCard = discreteGraphicsCard;
   }
   
+  var ult = new Ultrabook(1,1,1,1,1);
+  // var ult = new Server(1,1,1,1,1);
+  console.log(ult);
