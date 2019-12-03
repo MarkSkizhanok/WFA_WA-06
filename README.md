@@ -9,6 +9,8 @@ Mark Skizhanok
 
 [HW3](#hw3)
 
+[HW5](#hw5)
+
 # <a name="hw1">HW1</a>
 [Task1](https://markskizhanok.github.io/WFA_WA-06/HW1/Task1/index.html)
 
@@ -25,3 +27,6 @@ Mark Skizhanok
 
 # <a name="hw3">HW3</a>
 [HW3](https://markskizhanok.github.io/WFA_WA-06/HW3/index.html)
+
+# <a name="hw5">HW5</a>
+[HW5](https://markskizhanok.github.io/WFA_WA-06/HW5/index.html)
