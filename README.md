@@ -3,7 +3,7 @@ EDU_WEBforABAPers_WA-06_2019
 
 Mark Skizhanok
 
-# Front%20-%20End%20Basic
+# Front - End Basic
 
 [HW1](#hw1)
 
