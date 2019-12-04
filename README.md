@@ -3,6 +3,8 @@ EDU_WEBforABAPers_WA-06_2019
 
 Mark Skizhanok
 
+# Front - End Basic
+
 [HW1](#hw1)
 
 [HW2](#hw2)
@@ -12,21 +14,21 @@ Mark Skizhanok
 [HW5](#hw5)
 
 # <a name="hw1">HW1</a>
-[Task1](https://markskizhanok.github.io/WFA_WA-06/HW1/Task1/index.html)
+[Task1](https://markskizhanok.github.io/WFA_WA-06/Front-EndBasic/HW1/Task1/index.html)
 
-[Task2](https://markskizhanok.github.io/WFA_WA-06/HW1/Task2/index.html)
+[Task2](https://markskizhanok.github.io/WFA_WA-06/Front-EndBasic/HW1/Task2/index.html)
 
-[Task3](https://markskizhanok.github.io/WFA_WA-06/HW1/Task3/index.html)
+[Task3](https://markskizhanok.github.io/WFA_WA-06/Front-EndBasic/HW1/Task3/index.html)
 
-[Task4](https://markskizhanok.github.io/WFA_WA-06/HW1/Task4/index.html)
+[Task4](https://markskizhanok.github.io/WFA_WA-06/Front-EndBasic/HW1/Task4/index.html)
 
-[Task5](https://markskizhanok.github.io/WFA_WA-06/HW1/Task5/index.html)
+[Task5](https://markskizhanok.github.io/WFA_WA-06/Front-EndBasic/HW1/Task5/index.html)
 
 # <a name="hw2">HW2</a>
-[HW2](https://markskizhanok.github.io/WFA_WA-06/HW2/index.html)
+[HW2](https://markskizhanok.github.io/WFA_WA-06/Front-EndBasic/HW2/index.html)
 
 # <a name="hw3">HW3</a>
-[HW3](https://markskizhanok.github.io/WFA_WA-06/HW3/index.html)
+[HW3](https://markskizhanok.github.io/WFA_WA-06/Front-EndBasic/HW3/index.html)
 
 # <a name="hw5">HW5</a>
-[HW5](https://markskizhanok.github.io/WFA_WA-06/HW5/index.html)
+[HW5](https://markskizhanok.github.io/WFA_WA-06/Front-EndBasic/HW5/index.html)
