@@ -1,26 +1,26 @@
 
 class Computer {
   constructor(manufacturer, numberOfProcessorCores, ramSize, hddSize) {
-    this.manufacturer = manufacturer;
-    this.numberOfProcessorCores = numberOfProcessorCores;
-    this.ramSize = ramSize;
-    this.hddSize = hddSize;
+    this._manufacturer = manufacturer;
+    this._numberOfProcessorCores = numberOfProcessorCores;
+    this._ramSize = ramSize;
+    this._hddSize = hddSize;
   }
 
   get manufacturer() {
-    return this.manufacturer;
+    return this._manufacturer;
   }
 
   get numberOfProcessorCores() {
-    return this.numberOfProcessorCores;
+    return this._numberOfProcessorCores;
   }
 
   get ramSize() {
-    return this.ramSize;
+    return this._ramSize;
   }
 
   get hddSize() {
-    return this.hddSize;
+    return this._hddSize;
   }
 
   set manufacturer(manufacturer) {
@@ -43,11 +43,11 @@ class Computer {
 class Ultrabook extends Computer {
   constructor(manufacturer, numberOfProcessorCores, ramSize, hddSize, htt) {
     super(...arguments);
-    this.htt = htt;
+    this._htt = htt;
   }
 
   get htt() {
-    return this.htt;
+    return this._htt;
   }
 
   set htt(htt) {
@@ -58,11 +58,11 @@ class Ultrabook extends Computer {
 class Server extends Computer {
   constructor(manufacturer, numberOfProcessorCores, ramSize, hddSize, discreteGraphicsCard) {
     super(...arguments);
-    this.discreteGraphicsCard = discreteGraphicsCard;
+    this._discreteGraphicsCard = discreteGraphicsCard;
   }
 
   get discreteGraphicsCard() {
-    return this.discreteGraphicsCard;
+    return this._discreteGraphicsCard;
   }
 
   set discreteGraphicsCard(discreteGraphicsCard) {
