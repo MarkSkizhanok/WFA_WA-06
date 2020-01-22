@@ -1,0 +1,214 @@
+<mvc:View
+	controllerName="hw12.controller.Home"
+	xmlns="sap.m"
+	xmlns:mvc="sap.ui.core.mvc">
+
+	<Panel expandable="true" headerText="Create" width="auto" class="sapUiResponsiveMargin">
+		<content>
+			<sap.ui.layout.form:Form editable="true" xmlns:sap.ui.layout.form="sap.ui.layout.form" id="form11">
+			    <sap.ui.layout.form:formContainers>
+
+			        <sap.ui.layout.form:FormContainer id="container11">
+			            <sap.ui.layout.form:formElements>
+
+							<sap.ui.layout.form:FormElement label="Class" id="element11">
+								<sap.ui.layout.form:fields>
+									<ComboBox xmlns="sap.m" id="box11"  selectedKey="ultrabook">
+										<items>
+											<core:Item xmlns:core="sap.ui.core" key="ultrabook" text="Ultrabook" id="item10"/>
+											<core:Item xmlns:core="sap.ui.core" key="server" text="Server" id="item11"/>
+										</items>
+									</ComboBox>
+								</sap.ui.layout.form:fields>
+							</sap.ui.layout.form:FormElement>
+
+							<sap.ui.layout.form:FormElement label="Manufacturer" id="element12">
+			                    <sap.ui.layout.form:fields>
+			                        <Input width="100%" id="input12" value="{/manufacturer}"/>
+			                    </sap.ui.layout.form:fields>
+			                </sap.ui.layout.form:FormElement>
+
+							<sap.ui.layout.form:FormElement label="Cores number" id="element13">
+			                    <sap.ui.layout.form:fields>
+			                        <Input width="100%" id="input13" value="{/coreNumber}"/>
+			                    </sap.ui.layout.form:fields>
+			                </sap.ui.layout.form:FormElement>
+
+							<sap.ui.layout.form:FormElement label="RAM size" id="element14">
+			                    <sap.ui.layout.form:fields>
+			                        <Input width="100%" id="input14" value="{/ramSize}"/>
+			                    </sap.ui.layout.form:fields>
+			                </sap.ui.layout.form:FormElement>
+
+							<sap.ui.layout.form:FormElement label="HDD size" id="element15">
+			                    <sap.ui.layout.form:fields>
+			                        <Input width="100%" id="input15" value="{/hddSize}"/>
+			                    </sap.ui.layout.form:fields>
+			                </sap.ui.layout.form:FormElement>
+
+							<sap.ui.layout.form:FormElement label="Hyper-Threading technology" id="element16">
+			                    <sap.ui.layout.form:fields>
+			                        <Input width="100%" id="input16" value="{/htt}"/>
+			                    </sap.ui.layout.form:fields>
+			                </sap.ui.layout.form:FormElement>
+
+							<sap.ui.layout.form:FormElement label=" " id="element17">
+			                    <sap.ui.layout.form:fields>
+			                        <Button xmlns="sap.m" text="Submit" id="button11" press="onCreate" />
+			                    </sap.ui.layout.form:fields>
+			                </sap.ui.layout.form:FormElement>
+
+			            </sap.ui.layout.form:formElements>
+			        </sap.ui.layout.form:FormContainer>
+
+			    </sap.ui.layout.form:formContainers>
+
+			    <sap.ui.layout.form:layout>
+			        <sap.ui.layout.form:ResponsiveGridLayout id="layout10"/>
+			    </sap.ui.layout.form:layout>
+				
+			</sap.ui.layout.form:Form>
+		</content>
+	</Panel>
+
+	<Panel expandable="true" headerText="Read" width="auto" class="sapUiResponsiveMargin" expand="onRead">
+		<content>
+			<Table id="table21" items="{/DATA/GROUPS}">
+        		<columns>
+        		    <Column >
+        		        <Label text="{i18n>num}" />
+        		    </Column>
+        		    <Column >
+        		        <Label text="{i18n>Manufacturer}" />
+        		    </Column>
+        		    <Column >
+        		        <Label text="{i18n>Cores Number}" />
+        		    </Column>
+        		    <Column>
+        		        <Label text="{i18n>Ram Size}" />
+        		    </Column>
+        		    <Column>
+        		        <Label text="{i18n>HddSize}" />
+        		    </Column>
+        		    <Column>
+        		        <Label text="{i18n>HyperThreadingTechnology}" />
+        		    </Column>
+        		</columns>
+        		<items>
+        		 	<ColumnListItem>
+        		     	<cells>
+        		     	    <Text text="{num}" />
+        		     	    <Text text="{manufacturer}" />
+        		     	    <Text text="{coreNumber}" />                        
+        		     	    <Text text="{ramSize}" />                        
+        		     	    <Text text="{hddSize}" />                        
+        		     	    <Text text="{discreteGraphicsCard}" />                                              
+        		     	</cells>
+        		 	</ColumnListItem>
+    			 </items>
+    		</Table>
+		</content>
+	</Panel>
+
+	<Panel expandable="true" headerText="Update" width="auto" class="sapUiResponsiveMargin">
+		<content>
+			<sap.ui.layout.form:Form editable="true" xmlns:sap.ui.layout.form="sap.ui.layout.form" id="form31">
+			    <sap.ui.layout.form:formContainers>
+
+			        <sap.ui.layout.form:FormContainer id="container31">
+			            <sap.ui.layout.form:formElements>
+
+							<sap.ui.layout.form:FormElement label="ID" id="element31">
+								<sap.ui.layout.form:fields>
+									<ComboBox xmlns="sap.m" id="box31"  selectedKey="ultrabook">
+										<items>
+											<core:Item xmlns:core="sap.ui.core" key="ultrabook" text="5685365e1e3f99c9" id="item30"/>
+											<core:Item xmlns:core="sap.ui.core" key="server" text="Server" id="item31"/>
+										</items>
+									</ComboBox>
+								</sap.ui.layout.form:fields>
+							</sap.ui.layout.form:FormElement>
+
+							<sap.ui.layout.form:FormElement label="Manufacturer" id="element32">
+			                    <sap.ui.layout.form:fields>
+			                        <Input width="100%" id="input32" value="{/manufacturer}"/>
+			                    </sap.ui.layout.form:fields>
+			                </sap.ui.layout.form:FormElement>
+
+							<sap.ui.layout.form:FormElement label="Cores number" id="element33">
+			                    <sap.ui.layout.form:fields>
+			                        <Input width="100%" id="input33" value="{/coreNumber}"/>
+			                    </sap.ui.layout.form:fields>
+			                </sap.ui.layout.form:FormElement>
+
+							<sap.ui.layout.form:FormElement label="RAM size" id="element34">
+			                    <sap.ui.layout.form:fields>
+			                        <Input width="100%" id="input34" value="{/ramSize}"/>
+			                    </sap.ui.layout.form:fields>
+			                </sap.ui.layout.form:FormElement>
+
+							<sap.ui.layout.form:FormElement label="HDD size" id="element35">
+			                    <sap.ui.layout.form:fields>
+			                        <Input width="100%" id="input35" value="{/hddSize}"/>
+			                    </sap.ui.layout.form:fields>
+			                </sap.ui.layout.form:FormElement>
+
+							<sap.ui.layout.form:FormElement label="Hyper-Threading technology" id="element36">
+			                    <sap.ui.layout.form:fields>
+			                        <Input width="100%" id="input36" value="{/htt}"/>
+			                    </sap.ui.layout.form:fields>
+			                </sap.ui.layout.form:FormElement>
+
+							<sap.ui.layout.form:FormElement label=" " id="element37">
+			                    <sap.ui.layout.form:fields>
+			                        <Button xmlns="sap.m" text="Submit" id="button31" press="onUpdate" />
+			                    </sap.ui.layout.form:fields>
+			                </sap.ui.layout.form:FormElement>
+
+			            </sap.ui.layout.form:formElements>
+			        </sap.ui.layout.form:FormContainer>
+
+			    </sap.ui.layout.form:formContainers>
+
+			    <sap.ui.layout.form:layout>
+			        <sap.ui.layout.form:ResponsiveGridLayout id="layout30"/>
+			    </sap.ui.layout.form:layout>
+				
+			</sap.ui.layout.form:Form>
+		</content>
+	</Panel>
+
+	<Panel expandable="true" headerText="Delete" width="auto" class="sapUiResponsiveMargin">
+		<content>
+			<sap.ui.layout.form:Form editable="true" xmlns:sap.ui.layout.form="sap.ui.layout.form" id="form41">
+			    <sap.ui.layout.form:formContainers>
+
+			        <sap.ui.layout.form:FormContainer id="container41">
+			            <sap.ui.layout.form:formElements>
+
+							<sap.ui.layout.form:FormElement label="ID" id="element41">
+			                    <sap.ui.layout.form:fields>
+			                        <Input width="100%" id="input41" value="{/id}"/>
+			                    </sap.ui.layout.form:fields>
+			                </sap.ui.layout.form:FormElement>
+
+							<sap.ui.layout.form:FormElement label=" " id="element42">
+			                    <sap.ui.layout.form:fields>
+			                        <Button xmlns="sap.m" text="Submit" id="button41" press="onDelete" />
+			                    </sap.ui.layout.form:fields>
+			                </sap.ui.layout.form:FormElement>
+
+			            </sap.ui.layout.form:formElements>
+			        </sap.ui.layout.form:FormContainer>
+					
+			    </sap.ui.layout.form:formContainers>
+
+			    <sap.ui.layout.form:layout>
+			        <sap.ui.layout.form:ResponsiveGridLayout id="layout40"/>
+			    </sap.ui.layout.form:layout>
+				
+			</sap.ui.layout.form:Form>
+		</content>
+	</Panel>
+
+</mvc:View>
